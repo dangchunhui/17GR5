@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style  type="text/css" >
+			.div1{
+				width: 500px;
+				height: 300px;
+				margin: 0 auto;
+				perspective: 1000px; /*设置远近距离*/
+				-webkit-perspective: 1000px;/*设置远近距离*/
+				transform-style: preserve-3d;/*让div1中的元素适应3d效果*/
+				-webkit-transform-style: preserve-3d;/*让div1中的元素适应3d效果*/
+			}
+			
+			.div1 img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div1 img:nth-child(2){
+				transform: translate3d(100px,50px,200px);/*3d移动  分别对应x轴 y轴 z轴*/
+				-webkit-transform: translate3d(100px,50px,100px);
+			}
+			
+			
+			.div2{
+				width: 500px;
+				height: 300px;
+				margin: 0 auto;
+				margin-top:50px ;
+				perspective: 1000px; /*设置远近距离*/
+				-webkit-perspective: 1000px;/*设置远近距离*/
+				transform-style: preserve-3d;/*让div1中的元素适应3d效果*/
+				-webkit-transform-style: preserve-3d;/*让div1中的元素适应3d效果*/
+			}
+			
+			.div2 img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div2 img:nth-child(2){
+				transform: rotate3d(0,0,1.5,45deg);
+				-webkit-transform: rotate3d(1.2,1.2,1.5,45deg);
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div  class="div1" >
+			<img src="img/book.jpg" width="200px" />
+			<img src="img/book.jpg" width="200px" />
+		</div>
+		
+		
+		<div  class="div2" >
+			<img src="img/book.jpg" width="200px" />
+			<img src="img/book.jpg" width="200px" />
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			body{
+				background-color:#ccc ;
+			}
+			
+			.center{
+				width: 600px;
+				height: 600px;
+				border: 1px solid;
+				margin-left: 200px;
+				margin-top: 100px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+			}
+			
+			.y_div{
+				margin-top:200px ;
+				margin-left:100px ;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				transform: rotateX(-60deg);
+				-webkit-transform: rotateX(-50deg);
+				
+			}
+			
+			
+			.y_div div{
+				
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				border-radius:15px ;
+				transition: all 0.4s linear; 
+				
+			}
+			.img1{
+				transform: rotateY(0deg) translateZ(200px);
+			}
+			
+			.img2{
+				transform: rotateY(60deg) translateZ(200px);
+			}
+			
+			.img3{
+				transform: rotateY(120deg) translateZ(200px);
+			}
+			
+			.img4{
+				transform: rotateY(180deg) translateZ(200px);
+			}
+			
+			.img5{
+				transform: rotateY(240deg) translateZ(200px);
+			}
+			
+			.img6{
+				transform: rotateY(300deg) translateZ(200px);
+			}
+			
+			
+			
+			.center  div div img{
+				width: 225px;
+				height: 225px;
+				position: absolute;
+				border-radius:15px ;
+				
+			}
+			
+			
+			.y_div div:hover{
+				height:335px;
+		        width:335px;
+		        margin-top:-50px;
+		        margin-left:0 ;
+		  
+			}
+			
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div  class="center" >
+			
+			 <div class="y_div"  >
+			  <div  class="img1"  >
+			  	 <img src="img/1.jpg"  />
+			  </div>
+			
+			  <div  class="img2" >
+			  	 <img src="img/2.jpg"  />
+			  </div>
+			  <div class="img3"  >
+			  	 <img src="img/3.jpg"  />
+			  </div>
+			  <div class="img4" >
+			  	 <img src="img/4.jpg"  />
+			  </div>
+			  <div  class="img5"  >
+			  	 <img src="img/5.jpg"  />
+			  </div>
+			  <div  class="img6" >
+			  	 <img src="img/6.jpg"  />
+			  </div>
+			 </div>
+			
+			
+		</div>
+		
+	</body>
+</html>

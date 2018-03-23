@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>skew倾斜效果</title>
+  <style>
+	*{padding:0;margin:0;}
+	.container{width:600px;margin:50px auto;}
+	h2{font-size:18px;margin:30px 0 10px;font-weight:normal;color:#096;}
+
+	/**skew**/
+	.skew{
+		border:1px #000 solid;
+		margin-top:20px;
+		text-align:center;
+		/*transform:skewX(20deg);
+		transform:skewY(20deg);*/
+		transform:skew(20deg,20deg);
+		-ms-transform:skew(20deg,20deg);
+		-webkit-transform:skew(20deg,20deg);
+		-o-transform:skew(20deg,20deg);
+		-moz-transform:skew(20deg,20deg);
+	}
+	
+  </style>
+ </head>
+ <body>
+	<div class="container">
+		<!--skew-->
+		<h2>skew</h2>
+		<div class="skew"><img src="images/book.jpg" width="385" height="509"></div>
+	</div>
+ </body>
+</html>
