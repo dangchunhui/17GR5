@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css" >
+			.div1{
+				width: 600px;
+				height: 600px;
+				border: 1px solid;
+				margin: 0 auto;
+				perspective: 1000px;/*设置z大小，视觉距离*/
+				-webkit-perspective: 1000px;
+				transform-style: preserve-3d;/*设置标签内元素适应3d效果*/
+				-webkit-transform-style: preserve-3d;
+				
+				
+			}
+			.div1 img{
+				width: 300px;
+				height: 400px;
+				margin-top: 50px;
+				margin-left:150px ;
+				transform:rotateX(60deg) rotateZ(-45deg) scaleY(1.2) ;/*先沿x旋转，在沿z旋转 拉伸高度 Y */
+				box-shadow: -10px 5px 10px #333;  /*阴影   左  下  模糊程度 颜色  */
+				transition:  all  0.8s linear;
+				transform-origin: 50% 50% 100px;/*改变转动的中心位置*/
+				-webkit-transform-origin: 50% 50% 100px;/*改变转动的中心位置*/
+			}
+			
+			.div1 img:hover{
+				transform: rotate3d(0deg,0deg,0deg);
+				-webkit-transform: rotate3d(0,0,0,0deg);
+				box-shadow: -100px 50px 10px #fff;/*变换的时候改变背景*/
+				
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+	    <div  class="div1"  >
+	    	
+	 	    <img src="img/phone.jpg" />
+	 	    
+	    </div>	
+		
+	</body>
+</html>

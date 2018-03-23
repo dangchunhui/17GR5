@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css" >
+			
+			.div1{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				margin: 0 auto;
+				margin-top: 20px;
+				transition: all 0.8s linear; /*变化的方式，渐变*/
+			
+			}
+			.div1:hover{
+				transform:translate(100px,-10px);/*  2D移动  第一个值x方向 第二个y方向 */
+				transform:scale(1.2,1.2);/*变大，拉伸，第一个x方向宽度 第二个y方向高度  */
+				transform: rotate(50deg);/*旋转*/
+				transform:skew(30deg,40deg);/*倾斜*/
+				background-color: green;
+				
+			}
+			
+			.div2{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="div1" >
+		</div>
+		
+	   <div class="div2" >
+		</div>
+		
+	</body>
+</html>

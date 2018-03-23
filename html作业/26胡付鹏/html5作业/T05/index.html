@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		
+		<script type="text/javascript" >
+			
+			
+			function jiaoyan(){
+				var vs=  document.getElementById("email").validity;
+				if(vs.typeMismatch==true){
+					alert("你输入格式不符合要求")
+				}
+				
+				
+			}
+		   
+			
+		</script>
+		
+		
+		
+		
+	</head>
+	<body>
+		
+		<form  action=""  method="get"  autocomplete="on"  novalidate="novalidate"  >
+			
+			电子邮件：  <input type="email" id="email"   autocomplete="on"     name="email"  />  <br />
+			
+			url地址：  <input type="url"   name="url"    /> <br />
+			
+			年龄 ：<input  type="number"  name="age" min="1"  max="200"  step="10"  value="11"   /><br />
+			
+			滑到条：<input type="range"   name="hudong"  min="1"  max="100"     /><br />
+			
+			搜索引擎：<input type="search"  name="shousuo" /><br />
+			
+			日期类型：<input  type="date"   name="date"/><br />
+			       <input  type="month"   name="month"/><br />
+			       <input  type="week"   name="week"/><br />
+			       <input  type="time"  name="time"/><br />
+			       <input  type="datetime"  name="datetime"  /><br />
+			       <input  type="datetime-local" name="datetime-local" />
+			<input  type="submit"   onclick="jiaoyan()"   value="提交2"  />
+			<input  type="reset"   value="重置" />
+			
+		</form>
+		
+		
+		<form action="" method="get"  autocomplete="on"    >
+			
+			用户名：<input type="text"   id="username" required="required"   name="username" autofocus="autofocus"  placeholder="由字母和数字组成！"       />  <br />
+			密码：  <input type="password"  name="password"  /> <br />
+			
+			<input  type="submit" onclick="jiaoyan()"   value="提交"  />
+			<input  type="reset"   value="重置" />
+		</form>
+		
+		
+	</body>
+</html>

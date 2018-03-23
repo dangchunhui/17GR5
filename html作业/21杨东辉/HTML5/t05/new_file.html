@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				font-family: "宋体";
+				font-size:14px ;
+			}
+			
+			
+			.center{
+				position: relative;
+				width: 100%;
+				height: 800px;
+				background-color: #ddf5f7;
+				animation: beijing 30s infinite linear normal;
+				-webkit-animation: beijing 30s infinite linear normal;
+			}
+			@keyframes beijing{
+				0%{background-color: #DDF5F7;}
+				25%{background-color: #350847;}
+				50%{background-color: #0f192c;}
+				75%{background-color: #f9c7b8;}
+				100%{background-color: #DDF5F7;}
+			}
+			@-webkit-keyframes beijing{
+				0%{background-color: #DDF5F7;}
+				25%{background-color: #350847;}
+				50%{background-color: #0f192c;}
+				75%{background-color: #f9c7b8;}
+				100%{background-color: #DDF5F7;}
+			}
+			
+			
+			.qiqiu{
+				position: absolute;
+				top: 5%;
+				width: 157px;
+				height: 225px;
+				right: 0px;
+				animation: qiqiu 30s infinite alternate;
+				-webkit-animation: qiqiu 30s infinite alternate;
+				z-index: 2;
+			}
+			@keyframes qiqiu{
+				0%{right: 0%; transform: rotate(0deg);}
+				25%{right:25%;transform: rotate(30deg);}
+				50%{right:50%;transform: rotate(60deg);}
+				75%{right:75%;transform: rotate(30deg);}
+				100%{right:100%;transform: rotate(0deg);}
+			}
+			@-webkit-keyframes qiqiu{
+				0%{right: 0%; transform: rotate(0deg);}
+				25%{right:25%;transform: rotate(30deg);}
+				50%{right:50%;transform: rotate(60deg);}
+				75%{right:75%;transform: rotate(30deg);}
+				100%{right:100%;transform: rotate(0deg);}
+			}
+			
+			
+			.groundfront{
+				position: absolute;
+				bottom: 0;
+				z-index: 5;
+			}
+			
+			.grountback{
+				position: absolute;
+				bottom: 0;
+				z-index: 4;
+				transform: scaleX(1.3);
+				
+			}
+			.grountmid{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: 5;
+			}
+			
+			.skyline{
+				position: absolute;
+				bottom: 180px;
+				z-index: 3;
+				left: 20px;
+			}
+			
+			.Glockenspiel{
+				position: absolute;
+				bottom: 180px;
+				right: 600px;
+				
+			}
+			.cloudLarge{
+				position: absolute;
+				right: -300px;
+				animation: dayun 50s infinite alternate;
+				-webkit-animation: dayun 50s infinite alternate;
+				z-index: 4;
+			}
+			@keyframes dayun{
+				0%{right: -300px;}
+				50%{right: 40%;}
+				100%{right: 100%;}
+			}
+			@-webkit-@keyframes dayun{
+				0%{right: -300px;}
+				50%{right: 40%;}
+				100%{right: 100%;}
+			}
+			
+			.cloudMedium{
+				position: absolute;
+				left: 0;
+				animation: xiaoyun 50s infinite alternate;
+				-webkit-animation: xiaoyun 50s infinite alternate;
+				z-index: 1;
+			}
+			@keyframes xiaoyun{
+				0%{left: -300px;}
+				50%{left: 40%;}
+				100%{left: 100%;}
+			}
+			@-webkit-@keyframes xiaoyun{
+				0%{left: -300px;}
+				50%{left: 40%;}
+				100%{left: 100%;}
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div class="center">
+			<img class="qiqiu" src="img/balloon.png" />
+			<img class="groundfront" src="img/groundFront.png" />
+			<img class="grountback" src="img/groundBack.png" />
+			<img class="grountmid" src="img/groundMid.png" />
+		    <img class="skyline" src="img/skyline.png" />
+		    <img class="Glockenspiel" src="img/Glockenspiel.png" />
+		    <img class="cloudLarge" src="img/cloudLarge.png" />
+		    <img class="cloudMedium"  src="img/cloudMedium.png" />
+		    
+		    
+		    
+		</div>
+		
+	</body>
+</html>

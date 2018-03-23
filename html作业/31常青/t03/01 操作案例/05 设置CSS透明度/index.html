@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>设置CSS透明度</title>
+  <style>
+	*{padding:0;margin:0;}
+	.container{width:600px;margin:50px auto;}
+	h2{font-size:16px;margin-top:30px;color:#096;}
+	p{margin-top:10px;}
+	
+	.bg{
+		position:relative;
+		width:200px;
+		height:70px;
+		background:red;
+		padding-top:30px;
+	}
+	.bg span{
+		position:absolute;
+		display:block;
+		background:rgba(0,0,0,.5);
+		color:#fff;
+		width:200px;
+		height:100px;
+		left:0;
+		top:0;
+	}
+	/**图片悬浮变半透明**/
+	.opacity:hover{
+		opacity:0.8;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="container">
+		<h2>背景半透明</h2>
+		<p class="bg">
+			我是父元素
+			<span>我能透过父元素的文字</span>
+		</p>
+		<h2>图片半透明</h2>
+		<p><img src="img/pic_03.png" class="opacity"/></p>
+	</div>
+ </body>
+</html>

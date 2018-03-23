@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>HTML5表单属性</title>
+<style>
+* {
+	padding:0;
+	margin:0;
+}
+.container {
+	width:600px;
+	margin:20px auto;
+}
+h2 {
+	font-size:18px;
+	margin:10px 0 10px;
+	font-weight:normal;
+	color:#096;
+}
+p {
+	margin-top:10px;
+	display:inline-block;
+}
+fieldset {
+	padding-left:20px;
+	margin-top:20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <!--autofocus-->
+  <form method="get" action="">
+    <h2>Autofocus</h2>
+    <p>昵称：
+      <input type="text" name="nick" autofocus="autofocus"/>
+    </p>
+    <p>
+      <input type="submit" value="提交"/>
+    </p>
+  </form>
+  <!--required-->
+  <form method="get" action="">
+    <h2>Required</h2>
+    <p>密码：
+      <input type="password" name="psw" required="required" />
+    </p>
+    <p>
+      <input type="submit" value="提交"/>
+    </p>
+  </form>
+  <!--placeholder-->
+  <form method="get" action="">
+    <h2>Placeholder</h2>
+    <p>用户名：
+      <input type="text" name="user" placeholder="请填写6-10位中、英文字符"/>
+    </p>
+    <p>
+      <input type="submit" value="提交"/>
+    </p>
+  </form>
+  <!--autocomplete-->
+  <form method="get" action="">
+    <h2>Autocomplete</h2>
+    <p>邮箱：
+      <input type="email" name="email" autocomplete="on"/>
+    </p>
+    <p>
+      <input type="submit" value="提交"/>
+    </p>
+  </form>
+  <!--pattern-->
+  <form method="get" action="">
+    <h2>Pattern</h2>
+    <!--搜索正则表达式 a-z任意3个-->
+    <p>搜索：
+      <input type="search" name="search" pattern="[A-z]{3}"/>
+    </p>
+    <p>
+      <input type="submit" value="提交"/>
+    </p>
+  </form>
+
+  <!--height,width-->
+  <form method="get" action="" id="user-form">
+    <h2>Height&&Width</h2>
+    <p>first name：
+      <input type="text" name="firstName" />
+    </p>
+    <p>
+      <input type="image" src="img/eg_submit.jpg" width="30" height="30"/>
+    </p>
+  </form>
+</div>
+</body>
+</html>
