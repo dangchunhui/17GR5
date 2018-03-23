@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div{
+				width: 600px;
+				height: 560px;
+				margin: 0 auto;
+				margin-top: 60px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style:preserve-3d;
+				-webkit-transform-style:preserve-3d ;
+			}
+			.div img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div img:nth-child(2){
+				transform: translate3d(100px,50px,80px);
+			}
+			
+			.div1{
+				width: 600px;
+				height: 560px;
+				margin: 0 auto;
+				margin-top: 60px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style:preserve-3d;
+				-webkit-transform-style:preserve-3d ;
+			}
+			.div1 img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div1 img:nth-child(2){
+				transform: translate3d(100px,50px,80px);
+				transition: all 0.9s linear;
+			}
+			.div1 img:hover{
+				transform: rotate3d(1.5,1.5,1.8,30deg);
+				transform: rotate3d(0,0,0,30deg);
+			
+				
+				
+				
+			}
+			.div2{
+				width: 600px;
+				height: 560px;
+				margin: 0 auto;
+				margin-top: 60px;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style:preserve-3d;
+				-webkit-transform-style:preserve-3d ;
+			}
+			.div2 img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div2 img:nth-child(2){
+				transform: translate3d(100px,50px,80px);
+				transition: all 0.9s linear;
+			}
+			.div2 img:hover{
+				/*transform: rotate3d(1.5,1.5,1.8,30deg);*/
+				transform: scaleZ(5) rotateX(60deg);
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<h3 style="text-align: center;">3D位移</h3>
+		<div class="div">
+			<img src="img/book.jpg" width="235px" height="270px"/>
+			<img src="img/book.jpg" width="235px" height="270px"/>
+		</div>
+		<h3 style="text-align: center;">3D旋转</h3>
+		<div class="div1">
+			<img src="img/book.jpg" width="235px" height="270px"/>
+			<img src="img/book.jpg" width="235px" height="270px"/>
+		</div>
+		<h3 style="text-align: center;">3D缩放</h3>
+		<div class="div2">
+			<img src="img/book.jpg" width="235px" height="270px"/>
+			<img src="img/book.jpg" width="235px" height="270px"/>
+		</div>
+	</body>
+</html>

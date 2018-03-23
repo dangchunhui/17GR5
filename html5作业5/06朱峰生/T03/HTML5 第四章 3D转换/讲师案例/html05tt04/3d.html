@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css" >
+			
+			.div1{
+				width: 500px;
+				height: 300px;
+				margin: 0 auto;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;/*3d视觉的距离，z轴的距离*/
+				transform-style:preserve-3d ;/*3d标签内元素适应3D效果*/
+				-webkit-transform-style:preserve-3d ;
+				
+			}
+			.div1 img:nth-child(1){
+				opacity: 0.5;/*透明图片，用于参照*/
+				
+			}
+			.div1 img:nth-child(2){
+				transform: translate3d(100px,50px,100px);/*3d移动效果*/
+				-webkit-transform: translate3d(100px,50px,100px);/**/
+			}
+			
+			.div2{
+				width: 500px;
+				height: 300px;
+				
+				margin: 0 auto;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style:preserve-3d ;
+				-webkit-transform-style:preserve-3d ;
+				
+			}
+			.div2 img:nth-child(1){
+				opacity: 0.5;
+			}
+			.div2 img:nth-child(2){
+				transform: rotate3d(1.6,1.6,1.6,45deg);/*3d旋转效果*/
+				-webkit-transform: rotate3d(1.6,1.6,1.6,45deg);
+			}
+			
+			.div3{
+				width: 500px;
+				height: 300px;
+				
+				margin: 0 auto;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style:preserve-3d ;
+				-webkit-transform-style:preserve-3d ;
+			}
+			.div3 img:nth-child(1){
+				opacity: 0.5;
+				
+			}
+			.div3 img:nth-child(2){
+				transform:scaleZ(5) scaleX(1)  rotateX(45deg) ;/*3d缩放效果*/
+				-webkit-transform: scaleZ(5) scaleX(1)  rotateX(45deg) ;
+				
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<h2 style="text-align: center;" >3D移动</h2>
+		<div class="div1" >
+			<img src="img/book.jpg" width="200px" />
+			<img src="img/book.jpg" width="200px" />
+		</div>
+		
+		
+		
+		<h2 style="text-align: center;" >3D旋转</h2>
+		<div class="div2" >
+			<img   src="img/book.jpg" width="200px" />
+			<img   src="img/book.jpg" width="200px" />
+		</div>
+		
+			<h2 style="text-align: center;" >3D缩放</h2>
+		<div class="div3" >
+			<img   src="img/book.jpg" width="200px" />
+			<img   src="img/book.jpg" width="200px" />
+		</div>
+		
+		
+	</body>
+</html>

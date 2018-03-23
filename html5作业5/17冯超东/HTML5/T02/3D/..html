@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			.div{
+				width: 500px;
+				height: 700px;
+				border: 1px solid;
+				margin: 0 auto;
+				perspective: 1000px;
+				-webkit-perspective: 1000px;
+				transform-style: preserve-3d;
+				-webkit-transform-style: preserve-3d;
+				
+				
+
+			}
+			.div img{
+				margin: 100px;
+				transform: rotateX(60deg) rotateZ(-30deg) scaleY(1.2) ;/*X旋转 Y旋转 拉伸*/
+				box-shadow: -5px 5px 30px #333333;
+				transform-origin: 20% 20% 80px;
+				-webkit-transform-origin: 20% 20% 80px;
+			    box-shadow:-10px 5px 10px  #333333;/*正左  负右  模糊度 颜色*/
+			}			
+			
+			.div img:hover{
+				
+				transition: all 2.4s linear;
+			    transform: rotate3d(0,0,0,0deg);
+			    -webkit-transform: rotate3d(0,0,0,0deg);
+			    box-shadow: -100px 50px 10px #fff;
+
+			}
+		
+		
+		
+		</style>
+	</head>
+	<body>
+		<div class="div">
+			<img src="../img/phone.jpg" width="300px"/>
+		</div>
+	</body>
+</html>
+
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>
